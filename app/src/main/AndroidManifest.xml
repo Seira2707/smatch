@@ -13,6 +13,17 @@
         android:theme="@style/Theme.Smatch"
         tools:targetApi="31">
         <activity
+            android:name=".start"
+            android:exported="true" >
+
+            <!-- 애플리케이션의 진입 액티비티, 런처에서 나타납니다 -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
             android:name=".bnv"
             android:exported="false" />
         <activity
