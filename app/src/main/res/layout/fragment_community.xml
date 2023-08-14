@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="530dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="112dp"
+    tools:context=".community">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="@string/search"
+            android:textSize="18sp"
+            android:textColorHint="@color/gray_dark"
+            android:fontFamily="@font/regular"
+            android:paddingStart="25dp"
+            android:background="@drawable/ic_search"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/search"
+            android:background="@android:color/transparent"
+            app:layout_constraintTop_toTopOf="@+id/search"
+            app:layout_constraintEnd_toEndOf="@+id/search"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="18dp"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="440dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="22dp"
+            android:layout_marginEnd="22dp">
+
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
